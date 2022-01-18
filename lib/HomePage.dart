@@ -14,33 +14,54 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xeb050404),
+      backgroundColor: const Color(0xeb164e44),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ClipRRect(
-              borderRadius: const BorderRadius.all(Radius.circular(9)),
-              child: SignInButton(
-                Buttons.Email,
-                text: 'Continue with email',
-                onPressed: (){},
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(9)),
+                // box curves
+                child: SignInButton(
+                  Buttons.Email,
+                  text: 'Continue with email',
+                  onPressed: () {},
+                ),
               ),
             ),
-            ClipRRect(
-              borderRadius: const BorderRadius.all(Radius.circular(9)),
-              child: SignInButton(
-                Buttons.Google,
-                text: 'Continue with Google ',
-                onPressed: (){},
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(9)),
+                child: SignInButton(
+                  Buttons.Google,
+                  text: 'Continue with Google ',
+                  onPressed: () {},
+                ),
               ),
             ),
-            ClipRRect(
-              borderRadius: const BorderRadius.all(Radius.circular(9)),
-              child: SignInButton(
-                Buttons.Facebook,
-                text: 'Continue with Facebook',
-                onPressed: (){},
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(9)),
+                child: SignInButton(
+                  Buttons.Facebook,
+                  text: 'Continue with Facebook',
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(9)),
+                child: SignInButton(
+                  Buttons.AppleDark,
+                  text: 'Continue with Apple',
+                  onPressed: () {},
+                ),
               ),
             ),
           ],
